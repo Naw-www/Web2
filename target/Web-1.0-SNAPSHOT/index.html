@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Join Our Email List</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Join Our Email List</h1>
+    
+    <form action="emailList" method="post">
+        <input type="hidden" name="action" value="add">
+        
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        </div>
+        
+        <div class="form-group">
+            <label>How did you hear about us?</label>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" id="searchEngine" name="howHeard" value="searchEngine" checked>
+                    <label for="searchEngine" class="radio-label">Search engine</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="wordOfMouth" name="howHeard" value="wordOfMouth">
+                    <label for="wordOfMouth" class="radio-label">Word of mouth</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="socialMedia" name="howHeard" value="socialMedia">
+                    <label for="socialMedia" class="radio-label">Social Media</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="other" name="howHeard" value="other">
+                    <label for="other" class="radio-label">Other</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Would you like to receive announcements about new CDs and special offers?</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="cdAnnouncements" name="cdAnnouncements" value="yes">
+                    <label for="cdAnnouncements" class="checkbox-label">YES, I'd like that.</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="emailAnnouncements" name="emailAnnouncements" value="yes">
+                    <label for="emailAnnouncements" class="checkbox-label">YES, please send me email announcements.</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="contactMethod">Please contact me by:</label>
+            <select id="contactMethod" name="contactMethod">
+                <option value="emailOrPostal">Email or postal mail</option>
+                <option value="emailOnly">Email only</option>
+                <option value="postalOnly">Postal mail only</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" value="Join Now" id="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
